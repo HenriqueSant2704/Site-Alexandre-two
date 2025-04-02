@@ -1,0 +1,90 @@
+.carousel-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1; /* Mantém no fundo */
+}
+
+.carousel {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease; /* Adiciona uma transição suave */
+}
+
+.carousel img {
+    width: 100vw; /* Cada imagem ocupa exatamente a largura da tela */
+    height: 100vh; /* Cada imagem ocupa exatamente a altura da tela */
+    object-fit: cover; /* Mantém o preenchimento sem distorção */
+    filter: blur(5px); /* Mantém o desfoque no fundo */
+    flex-shrink: 0; /* Impede que as imagens encolham */
+}
+
+.box5, .box6 {
+    position: relative;
+    z-index: 1; /* Mantém os cards acima do carrossel */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.days {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px); /* Mantém um efeito de vidro sem afetar interatividade */
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    height: 350px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    margin-bottom: 15px;
+
+
+
+    & p {
+    margin-top: 30PX;
+    text-align: center;
+    font-size: 14px;
+    
+    }
+
+    & img {
+    width: 200px;
+    height: 130px;
+    margin-top: 30px;
+    border-radius: 10px;
+    object-fit: cover;
+    } 
+
+    &:hover {
+        transform: translateY(-20px);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Adiciona um efeito de sombra ao hover */
+    }
+
+       &:nth-child(3) {
+        & p {
+            margin-top: 20px;
+            
+        }
+       }
+}
+
+.boxText {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    text-align: center  ;
+    font-weight: 800;
+    font-size: 20px;
+    
+
+    & h1 {
+        font-size: 50px;
+        text-shadow: 1px 1px 2px grey;
+    }
+}

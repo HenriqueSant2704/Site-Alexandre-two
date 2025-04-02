@@ -1,0 +1,121 @@
+main {
+    background-color: rgb(234, 232, 232);
+}
+
+.box {
+    padding: 10px 0px 5px 0px;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 56%, rgba(2,0,36,1) 100%);
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo {
+    margin: 3px 30px 3px 80px;
+    height: 80px;
+    width: 80px;
+}
+
+.menu {
+    margin-left: 40px;
+}
+
+.menu a {
+    margin-right: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 30px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    color: white;
+    transition: all border-bottom 0.5s ease-in-out;  
+    display: inline-block;
+    
+
+    &:hover {
+        transform: translateY(-3px);
+        opacity: 90%;
+    }
+
+    &:focus {
+        border-bottom: 1px solid;
+    }
+
+    &:focus:after {
+        width: 30%; 
+    }
+
+}
+
+.box1 {
+    display: flex;
+    
+}
+
+.box2 {
+    text-align: center;
+
+}
+
+.box2 h1 {
+    margin-block: 90px 20px;
+   
+}
+
+.box2 p {
+    margin: 40px 15px 20px 20px;
+
+}
+
+.box1 img {
+    
+    height: 500px;
+    width: 50%;
+    margin: 20px 10px;
+    border-radius: 5px;
+}
+
+.box1 p {
+    margin-top: 60px;
+    font-size: 14px;
+    
+}
+
+.participacao {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.participacao img {
+    height: 280px;
+    width: 350px;
+    margin: 20px 10px;
+    border-radius: 7px;
+}
+
+.participacao p {
+    width: 50%;
+}
+
+.participacao2 {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    
+    gap: 20px;  
+}
+
+.participacao2 img {
+    height: 280px;
+    width: 350px;
+    margin: 10px 20px 0px 0px;
+    border-radius: 7px;
+}
+
+.participacao2 p {
+    margin-left: 300px;
+}
+
