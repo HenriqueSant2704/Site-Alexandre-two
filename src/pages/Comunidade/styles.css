@@ -1,0 +1,16 @@
+.box1 {
+    display: flex;
+    justify-content: center;
+}
+
+.test1 {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+   display: flex;
+}
+
+.test1 img {
+    width: 100px;
+    height: 100%;
+}

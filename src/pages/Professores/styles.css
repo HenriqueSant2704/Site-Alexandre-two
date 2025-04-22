@@ -1,0 +1,97 @@
+.professores img {
+   width: 100%;
+   height: 500px;
+   object-fit:cover ;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+
+.box5, .box6 {
+    position: relative;
+    z-index: 1; /* Mantém os cards acima do carrossel */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px); /* Mantém um efeito de vidro sem afetar interatividade */
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    margin-bottom: 15px;
+    
+
+    &:hover {
+        transform: translateY(-20px);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Adiciona um efeito de sombra ao hover */
+    }
+
+}
+
+.d {
+    display: flex;
+    
+}
+
+.b {
+    gap: 100px;
+}
+
+.l {
+    background-color:rgb(58, 175, 248);
+}
+
+.j {
+    background-color: rgb(10, 132, 10);
+}
+
+.v {
+    background-color: rgb(255, 64, 0);
+}
+
+.e {
+   color: rgb(0, 0, 193);
+}
+
+.descricao {
+    display: flex;
+    margin: 10px 0px 0px 25px;
+    gap: 8px;
+    font-size: 13px;
+}
+
+button {
+    margin-top: 35px;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    border: none ;
+
+    &:hover {
+        background-color: lightskyblue;
+    }
+}
+
+.prof {
+    width: 50%;
+
+    & img {
+        width: 100px;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        } 
+}
